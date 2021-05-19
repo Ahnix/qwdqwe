@@ -21,6 +21,10 @@ export class Transacoes extends Entity {
   })
   dataTransacao: string;
 
+  @property({
+    type: 'number',
+  })
+  contasId?: number;
   // Define well-known properties here
 
   // Indexer property to allow additional data

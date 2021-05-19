@@ -1,4 +1,5 @@
-import {Entity, model, property} from '@loopback/repository';
+import {Entity, model, property, hasOne} from '@loopback/repository';
+import {Contas} from './contas.model';
 
 @model({settings: {strict: false}})
 export class Pessoas extends Entity {
@@ -27,6 +28,8 @@ export class Pessoas extends Entity {
   })
   dataNascimento: string;
 
+  @hasOne(() => Contas)
+  contas: Contas;
   // Define well-known properties here
 
   // Indexer property to allow additional data
