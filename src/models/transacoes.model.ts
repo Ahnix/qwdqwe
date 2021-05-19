@@ -10,10 +10,10 @@ export class Transacoes extends Entity {
   id?: number;
 
   @property({
-    type: 'any',
+    type: 'number',
     required: true,
   })
-  valor: any;
+  valor: number;
 
   @property({
     type: 'date',

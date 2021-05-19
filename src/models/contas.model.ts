@@ -1,4 +1,4 @@
-import {Entity, model, property, hasMany} from '@loopback/repository';
+import {Entity, hasMany, model, property} from '@loopback/repository';
 import {Transacoes} from './transacoes.model';
 
 @model({settings: {strict: false}})
@@ -11,14 +11,14 @@ export class Contas extends Entity {
   id?: number;
 
   @property({
-    type: 'any',
+    type: 'number',
   })
-  saldo?: any;
+  saldo?: number;
 
   @property({
-    type: 'any',
+    type: 'number',
   })
-  limiteSaqueDiario?: any;
+  limiteSaqueDiario?: number;
 
   @property({
     type: 'boolean',
