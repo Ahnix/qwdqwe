@@ -7,7 +7,7 @@ Conforme escopo é possivel criar conta,efetuar transacoes,consultar saldo,efetu
 
 O swagger vulgo webdoc, possui todos os endpoints necessarios para tais atividade.
 
-## Padrao MVC
+## Padrao MRC (model repo control)
 
 - model define os fields e relacionamentos.
 - repositorio transcreve o model para o db mysql
